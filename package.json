@@ -1,0 +1,22 @@
+{
+  "name": "ts-design_patterns",
+  "version": "1.0.0",
+  "description": "Design patterns with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Danachury/ts-design_patterns.git"
+  },
+  "author": "Danachury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danachury/ts-design_patterns/issues"
+  },
+  "homepage": "https://github.com/Danachury/ts-design_patterns#readme",
+  "dependencies": {
+    "ts-node": "^10.4.0"
+  }
+}
