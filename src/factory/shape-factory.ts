@@ -13,6 +13,8 @@ export default class ShapeFactory {
         return new Square()
       case ShapeType.RECTANGLE:
         return new Rectangle()
+      default:
+        throw new Error(`Given shapeType: ${shapeType} value is not required typeof: ShapeType`)
     }
   }
 }
