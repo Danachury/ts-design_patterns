@@ -1,8 +1,8 @@
 export interface Cloneable {
-  clone: () => Cloneable
+  clone(): Cloneable
 }
 
-export abstract class AbstractCloneable implements Cloneable {
+export abstract class DefaultCloneable implements Cloneable {
   clone(): this {
     // Create prototype with functional methods
     const clone = Object.create(this)
@@ -11,7 +11,7 @@ export abstract class AbstractCloneable implements Cloneable {
   }
 }
 
-export class Account extends AbstractCloneable {
+export class Account extends DefaultCloneable {
 
   constructor(private _id: number,
               private _name: string) {
