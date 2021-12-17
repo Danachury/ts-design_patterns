@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "rootDir": "src",
     "experimentalDecorators": true,
-    "target": "ES2021",
+    "target": "ESNext",
     "module": "CommonJS",
     "noImplicitAny": true,
     "removeComments": true,
