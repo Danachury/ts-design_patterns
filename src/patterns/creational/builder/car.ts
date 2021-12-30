@@ -3,10 +3,10 @@ import Engine from './engine'
 import Gps from './gps'
 import { Seats } from './seat'
 import TripComputer from './trip-computer'
-import DefaultCloneable from '../common/cloneable'
+import DefaultCloneable from '../../../core/cloneable'
 
 // noinspection JSAnnotator
-export default class Manual extends DefaultCloneable {
+export default class Car extends DefaultCloneable {
 
   private _engine: Engine
   private _gps: Gps
@@ -49,43 +49,43 @@ export default class Manual extends DefaultCloneable {
     return this._tripComputer
   }
 
-  static Builder = class implements Builder<Manual> {
+  static Builder = class implements Builder<Car> {
 
-    private _manual: Manual
+    private _car: Car
 
     constructor() {
       this.reset()
     }
 
     reset(): this {
-      this._manual = new Manual()
+      this._car = new Car()
       return this
     }
 
     setEngine(engine: Engine): this {
-      this._manual.engine = engine;
+      this._car.engine = engine
       return this
     }
 
     setGPS(gps: Gps): this {
-      this._manual.gps = gps
-      return this;
+      this._car.gps = gps
+      return this
     }
 
     setSeats(seats: Seats): this {
-      this._manual.seats = seats
-      return this;
+      this._car.seats = seats
+      return this
     }
 
     setTripComputer(tripComputer: TripComputer): this {
-      this._manual.tripComputer = tripComputer
-      return this;
+      this._car.tripComputer = tripComputer
+      return this
     }
 
-    build(): Manual {
-      const builtManual = this._manual.clone()
+    build(): Car {
+      const builtCar = this._car.clone()
       this.reset()
-      return builtManual;
+      return builtCar
     }
   }
 }

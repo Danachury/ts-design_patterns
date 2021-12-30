@@ -1,4 +1,4 @@
-import Shape from 'src/factory/shape'
+import Shape from './shape'
 
 export default class Circle implements Shape {
 

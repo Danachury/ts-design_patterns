@@ -1,5 +1,5 @@
-import Observable from 'src/observer/observable'
-import Observer from 'src/observer/observer'
+import Observable from './observable'
+import Observer from './observer'
 
 class YoutubeChannel implements Observable {
 

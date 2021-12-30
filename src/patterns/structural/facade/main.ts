@@ -1,5 +1,5 @@
 import { Subsystem1, Subsystem2 } from './subsystem'
-import { Facade, System } from './system.facade'
+import Facade, { System } from './system.facade'
 import { Client } from './client'
 
 const subsystem1 = new Subsystem1()

@@ -2,7 +2,9 @@
   "name": "ts-design_patterns",
   "version": "1.0.0",
   "description": "Design patterns with typescript",
-  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

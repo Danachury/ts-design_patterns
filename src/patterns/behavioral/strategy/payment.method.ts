@@ -20,6 +20,6 @@ export class PaymentCardMethod implements PaymentMethod {
 
   doPayment(userId: string, amount: number): PaymentResponse {
     console.log(`${this.franchise} approved the transaction for user: ${userId} with amount of: ${amount}`)
-    return new PaymentResponse(false);
+    return new PaymentResponse(false)
   }
 }

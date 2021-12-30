@@ -1,4 +1,4 @@
-import Observer from 'src/observer/observer'
+import Observer from './observer'
 
 export default interface Observable {
   attach: (o: Observer) => void

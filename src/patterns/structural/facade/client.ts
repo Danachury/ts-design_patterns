@@ -1,4 +1,4 @@
-import { Facade } from './system.facade'
+import Facade from './system.facade'
 
 export class Client {
 

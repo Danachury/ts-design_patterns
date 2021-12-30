@@ -1,6 +1,6 @@
 import { Subsystem1, Subsystem2 } from './subsystem'
 
-export interface Facade {
+export default interface Facade {
   operation(): string
 }
 
