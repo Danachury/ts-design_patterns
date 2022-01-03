@@ -62,22 +62,22 @@ export default class Car extends DefaultCloneable {
       return this
     }
 
-    setEngine(engine: Engine): this {
+    withEngine(engine: Engine): this {
       this._car.engine = engine
       return this
     }
 
-    setGPS(gps: Gps): this {
+    withGPS(gps: Gps): this {
       this._car.gps = gps
       return this
     }
 
-    setSeats(seats: Seats): this {
+    withSeats(seats: Seats): this {
       this._car.seats = seats
       return this
     }
 
-    setTripComputer(tripComputer: TripComputer): this {
+    withTripComputer(tripComputer: TripComputer): this {
       this._car.tripComputer = tripComputer
       return this
     }

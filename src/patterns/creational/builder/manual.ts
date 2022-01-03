@@ -62,22 +62,22 @@ export default class Manual extends AbstractCloneable {
       return this
     }
 
-    setEngine(engine: Engine): this {
+    withEngine(engine: Engine): this {
       this._manual.engine = engine
       return this
     }
 
-    setGPS(gps: Gps): this {
+    withGPS(gps: Gps): this {
       this._manual.gps = gps
       return this
     }
 
-    setSeats(seats: Seats): this {
+    withSeats(seats: Seats): this {
       this._manual.seats = seats
       return this
     }
 
-    setTripComputer(tripComputer: TripComputer): this {
+    withTripComputer(tripComputer: TripComputer): this {
       this._manual.tripComputer = tripComputer
       return this
     }
