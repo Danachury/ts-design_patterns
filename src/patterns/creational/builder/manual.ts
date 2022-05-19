@@ -3,10 +3,10 @@ import Engine from './engine'
 import Gps from './gps'
 import { Seats } from './seat'
 import TripComputer from './trip-computer'
-import AbstractCloneable from '../../../core/cloneable'
+import Cloneable from '../../../core/cloneable'
 
 // noinspection JSAnnotator
-export default class Manual extends AbstractCloneable {
+export default class Manual extends Cloneable {
 
   private _engine: Engine
   private _gps: Gps
@@ -62,22 +62,22 @@ export default class Manual extends AbstractCloneable {
       return this
     }
 
-    withEngine(engine: Engine): this {
+    engine(engine: Engine): this {
       this._manual.engine = engine
       return this
     }
 
-    withGPS(gps: Gps): this {
+    gps(gps: Gps): this {
       this._manual.gps = gps
       return this
     }
 
-    withSeats(seats: Seats): this {
+    seats(seats: Seats): this {
       this._manual.seats = seats
       return this
     }
 
-    withTripComputer(tripComputer: TripComputer): this {
+    tripComputer(tripComputer: TripComputer): this {
       this._manual.tripComputer = tripComputer
       return this
     }

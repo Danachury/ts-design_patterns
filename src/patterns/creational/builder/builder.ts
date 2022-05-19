@@ -7,13 +7,13 @@ export default interface Builder<T> {
 
   reset(): this
 
-  withSeats(seats: Seats): this
+  seats(seats: Seats): this
 
-  withEngine(engine: Engine): this
+  engine(engine: Engine): this
 
-  withTripComputer(tripComputer: TripComputer): this
+  tripComputer(tripComputer: TripComputer): this
 
-  withGPS(gps: Gps): this
+  gps(gps: Gps): this
 
   build(): T
 }
