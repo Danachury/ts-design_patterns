@@ -19,8 +19,8 @@ export class ConcreteMediator implements Mediator {
   private _component2: Component2
 
   constructor(component1: Component1, component2: Component2) {
-    this._component1 = component1.mediator(this)
-    this._component2 = component2.mediator(this)
+    this._component1 = component1.withMediator(this)
+    this._component2 = component2.withMediator(this)
   }
 
   notify(sender: object, event: string): void {
