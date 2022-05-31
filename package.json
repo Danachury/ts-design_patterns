@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Danachury/ts-design_patterns#readme",
   "dependencies": {
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.8.0"
   }
 }
